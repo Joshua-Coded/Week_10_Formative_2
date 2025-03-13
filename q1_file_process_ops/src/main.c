@@ -1,17 +1,23 @@
 #include "file_process_ops.h"
 
 int main() {
-    printf("Demonstrating File Operations:\n");
+    printf("System Calls Demonstration Program\n");
+    printf("==================================\n");
+
+    // Demonstrate File Operations
+    printf("\n[FILE OPERATIONS DEMONSTRATION]\n");
     if (perform_file_operations() != 0) {
-        fprintf(stderr, "File operations failed\n");
-        return 1;
+        fprintf(stderr, "File operations demonstration failed\n");
+        return EXIT_FAILURE;
     }
 
-    printf("\nDemonstrating Process Operations:\n");
+    // Demonstrate Process Operations
+    printf("\n[PROCESS OPERATIONS DEMONSTRATION]\n");
     if (perform_process_operations() != 0) {
-        fprintf(stderr, "Process operations failed\n");
-        return 1;
+        fprintf(stderr, "Process operations demonstration failed\n");
+        return EXIT_FAILURE;
     }
 
-    return 0;
+    printf("\nSystem Calls Demonstration Completed Successfully\n");
+    return EXIT_SUCCESS;
 }
