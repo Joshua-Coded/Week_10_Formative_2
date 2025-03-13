@@ -2,7 +2,7 @@
 
 // Global variables
 static int total_primes = 0;
-static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 // Efficient prime checking function
 bool is_prime(int n) {

@@ -1,5 +1,8 @@
 #include "prime_counter.h"
 
+// Declare mutex as an external variable
+extern pthread_mutex_t mutex;
+
 int main() {
     pthread_t threads[NUM_THREADS];
     thread_args thread_arguments[NUM_THREADS];
