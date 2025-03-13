@@ -3,6 +3,7 @@
 
 #include <stdio.h>      // Standard input/output operations
 #include <stdlib.h>     // Standard library functions (exit, etc.)
+#include <string.h>     // String manipulation and strerror()
 #include <unistd.h>     // POSIX operating system API (fork, exec)
 #include <fcntl.h>      // File control options (open flags)
 #include <sys/wait.h>   // Waiting for process termination
